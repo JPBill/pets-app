@@ -15,6 +15,11 @@ const userSchema = new mongoose.Schema(
       type: String,
       required: true,
     },
+    avatar: {
+      type: String,
+      default:
+        'https://www.pikpng.com/pngl/b/33-336880_dog-paw-icon-red-png-download-paw-print.png',
+    },
   },
   { timestamps: true }
 );

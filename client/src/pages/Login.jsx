@@ -9,6 +9,7 @@ import {
   loginSuccess,
   loginFailure,
 } from '../redux/user/userSlice';
+import OAuth from '../components/OAuth';
 
 const Login = () => {
   const { loading, error } = useSelector((state) => state.user);
@@ -121,9 +122,7 @@ const Login = () => {
                 btnStyles="w-full flex justify-center"
                 disabled={loading}
               />
-              <button className="w-full flex justify-center mt-2 py-2 px-4 border border-cyan-600 rounded-md shadow-sm text-sm redhat-medium text-gray-700 bg-gray-50 hover:bg-gray-100">
-                Continuar con Google
-              </button>
+              <OAuth />
             </div>
           </form>
           {error && (
