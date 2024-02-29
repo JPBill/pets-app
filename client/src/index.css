@@ -58,3 +58,7 @@
 .redhat-bold {
   font-family: 'RedHatDisplay-Bold';
 }
+
+::-ms-reveal {
+  display: none;
+}
